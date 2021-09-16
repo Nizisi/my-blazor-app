@@ -1,3 +1,10 @@
+//Jie Zhou
+//https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/
+![2nd](https://user-images.githubusercontent.com/54412715/133553139-fe6baaf1-0eec-4690-a787-b35f4821618f.png)
+
+
+
+
 # Blazor Starter Application
 
 This template contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code.
