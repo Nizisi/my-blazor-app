@@ -1,5 +1,7 @@
 //Jie Zhou
+
 //https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/
+//photo is a screenshot of this program running
 ![2nd](https://user-images.githubusercontent.com/54412715/133553139-fe6baaf1-0eec-4690-a787-b35f4821618f.png)
 
 
