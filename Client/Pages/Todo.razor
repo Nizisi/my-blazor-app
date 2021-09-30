@@ -1,0 +1,30 @@
+﻿@page "/todo"    <!-- name for the page-->
+
+<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>          <!-- the most important heading, also show a count of the number of todo items that aren't complete -->
+
+<ul>
+    @foreach (var todo in todos)            <!-- foreach loop-->
+    {
+        <li>
+            <input type="checkbox" @bind="todo.IsDone" /> <!-- Add a checkbox input for each todo item and bind its value to the IsDone property-->
+            <input @bind="todo.Title" />                    <!-- <input> element bound to todo.Title with @bind-->
+        </li>
+    }
+</ul>
+
+<input placeholder="Something todo" @bind="newTodo" />          <!-- Add a text input-->
+<button @onclick="AddTodo">Add todo</button>                        <!-- The AddTodo C# method is called when the button is selected-->
+
+@code {
+    private List<TodoItem> todos = new();                       <!-- a field for the todo items-->
+    private string newTodo;                                     <!-- To get the title of the new todo item-->
+
+    private void AddTodo()                                      <!-- function named AddTodo-->
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))                <!-- if statement with condition-->
+        {
+            todos.Add(new TodoItem { Title = newTodo });        <!-- if condition checked, use the add from todos, Update the AddTodo method to add the TodoItem with the specified title to the list.-->
+            newTodo = string.Empty;                              <!-- Clear the value of the text input by setting newTodo to an empty string-->
+        }
+    }
+}
