@@ -1,5 +1,8 @@
 //Jie Zhou
 
+
+UPDATE: HAVING ERROR RZ1008 AND RZ1017. KEEP SAY IF STATEMENT NEED TO BE ENCLOSED IN {}, but I did that in the Todo.razor, still the same problem
+
 //https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/
 //photo is a screenshot of this program running
 ![2nd](https://user-images.githubusercontent.com/54412715/133553139-fe6baaf1-0eec-4690-a787-b35f4821618f.png)
